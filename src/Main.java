@@ -4,6 +4,7 @@ public class Main {
         menu.demarrage();
         String nameHero = menu.nameChoice();
         menu.persoChoice(nameHero);
+        menu.readyToPlay();
 
     }}
 
