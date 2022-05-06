@@ -58,7 +58,7 @@ public class Menu {
                  System.out.println("vous avez choisis le guerrier " + guerrier);
                  persoOk = true;
              }
-             if (persoChoice == 3){
+             else if (persoChoice == 3){
                  exit();
              }
              else if (persoChoice == 2) {

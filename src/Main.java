@@ -11,12 +11,12 @@ public class Main {
         //démarage de la partie
         int playerPosition = 1;
         while (playerPosition <= 64) {
-            System.out.println(dee.jetterDe());
-            playerPosition += dee.jetterDe();
-            System.out.println(playerPosition);
+            int jetDeDee = dee.jetterDe();
+            System.out.println("dé: "+jetDeDee);
+            playerPosition += jetDeDee;
+            System.out.println("position: "+playerPosition);
         }
             System.out.println("Vous ètes le Boss du royaume de DONJONS & DRAGONS");
-            menu.exit();
         }
 }
 
