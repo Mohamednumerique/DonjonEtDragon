@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Menu {
 //démarer le jeux
     public void demarrage(){
-        System.out.println("----------------------------------------------");;
+        System.out.println("----------------------------------------------");
         System.out.println("Bienvenue dans le Royaume de Donjon et Dragon vous, un monde ou allez trop vite canné");
     }
 //quitter le jeux
@@ -30,7 +30,7 @@ public class Menu {
 
 
 
-        System.out.println("----------------------------------------------");;
+        System.out.println("----------------------------------------------");
         System.out.println("Le nom de votre héro sera: " + playerName);  // Output user input
 
         return playerName;
