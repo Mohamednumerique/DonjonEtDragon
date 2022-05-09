@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -10,13 +11,22 @@ public class Main {
             System.out.println("------------------------");;
             System.out.println("pour jeter le dée appuyer sur 1)");
             Scanner scanner = new Scanner(System.in);
-            int lancerDee = scanner.nextInt();  // Read user input
-            scanner.nextLine();
+            int lancerDee = 0;
+
+            //exeption
+            try{
+                lancerDee = scanner.nextInt();  // Read user input
+                scanner.nextLine();
+            }catch(InputMismatchException e){
+                System.out.println("TAPEZ UNE DES REPONSES POSSIBLES");
+            }
+
             int jetDeDee = 0;
             if(lancerDee == 1){
                 jetDeDee = dee.jetterDe();
+                System.out.println("dé: "+jetDeDee);
             }
-            System.out.println("dé: "+jetDeDee);
+
             playerPosition += jetDeDee;
             System.out.println("position: "+playerPosition);
         }
@@ -46,6 +56,7 @@ public class Main {
         }
 
         }
+
     }
 
 

@@ -1,42 +1,40 @@
-public class Magicien {
+public class Magicien extends Personnage  {
 
     // Attributs
 
-    private String nom;
-    private int vie;
-    private int attaque;
+//    private String nom;
+//    private int vie;
+//    private int attaque;
+
     private String philtre;
 
     // Les constructeurs
 
     public Magicien(String mNom, int mvie, int mAttaque) {
-        this.nom = mNom;
-        this.vie = mvie;
-        this.attaque = mAttaque;
+        super(mNom, mvie, mAttaque);
     }
     public Magicien() {
-        this.nom = "mohamed";
-        this.vie = 10;
-        this.attaque = 15;
+        super("mohamed", 10, 15);
+
     }
     public Magicien(String mNom) {
-        this.nom = mNom;
-        this.vie = 10;
-        this.attaque = 15;
+        super(mNom, 10, 15);
+
     }
 
     //geter & setter
-    public String getNom() {
-        return this.nom;
-    }
-    public int getVie() {
-        return this.vie;
-    }
-    public int getAttaque() {
-        return this.attaque;
-    }
+//    public String getNom() {
+//        return this.nom;
+//    }
+//    public int getVie() {
+//        return this.vie;
+//    }
+//    public int getAttaque() {
+//        return this.attaque;
+//    }
+//
+//    public String toString(){
+//        return this.nom;
+//    }
 
-    public String toString(){
-        return this.nom;
-    }
 }
