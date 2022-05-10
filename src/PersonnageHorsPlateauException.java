@@ -5,7 +5,4 @@ public class PersonnageHorsPlateauException extends Exception {
         super("T'ES ALLE TROP LOIN");
 
     }
-
-
-
 };

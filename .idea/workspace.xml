@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9020f666-e366-4932-8c66-b9b9f8179ff2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Arme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Guerrier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Magicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Magicien.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personnage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PersonnageHorsPlateauException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonnageHorsPlateauException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mohamed.lotfi/Desktop/donjon"
+    "last_opened_file_path": "C:/Users/mohamed.lotfi/Desktop/donjon/src"
   }
 }]]></component>
   <component name="RunManager">
@@ -68,7 +68,7 @@
       <workItem from="1651579102217" duration="7399000" />
       <workItem from="1651651774405" duration="26013000" />
       <workItem from="1651751094476" duration="11676000" />
-      <workItem from="1651828127750" duration="20113000" />
+      <workItem from="1651828127750" duration="39345000" />
     </task>
     <servers />
   </component>

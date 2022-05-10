@@ -22,16 +22,31 @@ public class Main {
             }
 
             int jetDeDee = 0;
+
             if(lancerDee == 1){
                 jetDeDee = dee.jetterDe();
                 System.out.println("dé: "+jetDeDee);
             }
+            try {
+                playerPosition += jetDeDee;
+                System.out.println("position: "+playerPosition);
+            }catch (Exception e){
 
-            playerPosition += jetDeDee;
-            System.out.println("position: "+playerPosition);
+            }
+
         }
 
         return playerPosition;
+    }
+
+    private static int move(int origine) throws PersonnageHorsPlateauException{
+        Dee dee = new Dee();
+        int jetDeDee = dee.jetterDe();
+        int newPosition = origine + jetDeDee;
+        if(newPosition >= 64) {
+            throw new PersonnageHorsPlateauException();
+        }
+        return newPosition;
     }
     public static void main(String[] args) {
         Menu menu = new Menu();
@@ -41,9 +56,21 @@ public class Main {
         menu.readyToPlay();
         System.out.println("on commence la partie");
         boolean finDuGame = true;
-        //démarage de la partie
-        while(finDuGame ) {
-            int playerPosition = getPlayerPosition();
+        int playerPosition = 0;
+
+        // Déplacement dans le jeu
+        while (playerPosition < 64){
+            try {
+                playerPosition = move(playerPosition);
+            } catch (PersonnageHorsPlateauException e) {
+                System.out.println(e.getMessage());
+                playerPosition = 64;
+            }
+            System.out.println(playerPosition);
+        }
+
+        //fin de la partie
+        while(finDuGame ){
             System.out.println("Vous ètes le Boss du royaume de DONJONS & DRAGONS");
             System.out.println("Tapez 1) pour recommencer");
             System.out.println("Tapez 2) pour quitter");
@@ -52,6 +79,9 @@ public class Main {
             scanner.nextLine();
             if (fin == 2){
                 finDuGame = false;
+            }
+            if (fin == 1){
+                getPlayerPosition();
             }
         }
 
